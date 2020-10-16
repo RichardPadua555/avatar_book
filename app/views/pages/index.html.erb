@@ -1,18 +1,5 @@
 <% if current_user %>
-
-<h2>Welcome to Our Home Page</h2>
-<p>
-  <%= link_to 'Logout' , destroy_user_session_path , method: :delete , data: { confirm: 'Are you Sure' } , class: 'btn-btn-danger' %>  
-</p>
-
+  Welcome to your account 
 <% else %>
-
-<p>
-  <%= link_to 'Create Account' , new_user_registration_path , class: 'btn btn-info' %>
-</p>
-
-<p>
-  <%= link_to 'Sign In' , new_user_session_path , class: 'btn btn-success' %>
-</p>
 
 <% end %>
